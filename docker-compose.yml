@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  chaos-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask-chaos-pod
+    ports:
+      - "8080:8080"
+    # Restart policy handles the /crash endpoint simulation
+    restart: always
+    # Optional: Set resource limits to test how the container reacts under pressure
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
