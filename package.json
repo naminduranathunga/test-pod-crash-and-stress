@@ -1,0 +1,24 @@
+{
+  "name": "test-stress-and-crash",
+  "version": "1.0.0",
+  "description": "This will crash the application if you try to run it.",
+  "homepage": "https://github.com/naminduranathunga/test-pod-crash-and-stress#readme",
+  "bugs": {
+    "url": "https://github.com/naminduranathunga/test-pod-crash-and-stress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naminduranathunga/test-pod-crash-and-stress.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
